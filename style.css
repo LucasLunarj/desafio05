@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+html,
+input,
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  font-size: 1.6rem;
+}
+
+.page {
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+
+  margin: 0 auto;
+  max-width: 430px;
+  height: 100vh;
+}
+.logo {
+  background-color: #f4fcff;
+  padding: 8px;
+  border-radius: 50%;
+}
+header {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+  height: 7.2rem;
+
+  background: #065e7c;
+
+  padding: 1.2rem 2.8rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+header input {
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  flex: 1;
+  padding: 12px 16px 12px 14px;
+  border-radius: 4px;
+  font-weight: 600;
+  line-height: 100%;
+}
+header input::placeholder {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #fff;
+  line-height: 100%;
+}
+.avatar {
+  width: 4.2rem;
+  height: 4.2rem;
+
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 160%;
+}
+main {
+  margin-top: 7rem;
+  overflow-y: scroll;
+}
+
+main::-webkit-scrollbar {
+  display: none;
+}
+main img {
+  width: 100%;
+}
+
+.like-area {
+  display: flex;
+  gap: 1.2rem;
+
+  margin-top: 0.8rem;
+  margin-bottom: 3.1rem;
+}
+
+.dislike-like {
+  padding: 12px;
+
+  width: 4rem;
+  height: 4rem;
+
+  border-radius: 50%;
+  border: none;
+  text-align: center;
+  background: #065e7c;
+
+  cursor: pointer;
+}
+
+.dislike-like:hover {
+  background: #0a82aa;
+}
+
+.dislike-like img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.text-area {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 22px 32px 22px;
+}
+
+.text-area > div {
+  margin-top: 3.1rem;
+}
+
+.text-area p {
+  font-weight: 400;
+  line-height: 160%;
+  color: #121214;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  width: 38.4rem;
+  margin: auto;
+
+  margin-bottom: 10rem;
+}
+.article {
+  display: flex;
+
+  gap: 1.6rem;
+}
+.article div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+.article img {
+  width: 15.1rem;
+  object-fit: fill;
+}
+
+.article h4 {
+  color: #202024;
+  font-size: 1.8rem;
+  margin-bottom: rem;
+}
+
+.article p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 160%;
+
+  color: #121214;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 7.2rem;
+
+  background: #065e7c;
+  color: #fff;
+  font-size: 1.6rem;
+
+  font-weight: 600;
+
+  position: fixed;
+
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+@media (min-width: 760px) {
+  .page {
+    max-width: 100%;
+  }
+  main {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    gap: 5rem;
+  }
+
+  header {
+    padding: 1.2rem 11.2rem;
+  }
+  .text-area {
+    margin-top: 8rem;
+    max-width: 80.3rem;
+    flex-direction: column;
+    margin-bottom: 11.2rem;
+  }
+  .text-area > img {
+    border-radius: 0.5rem;
+    height: 40.5rem;
+    width: 80.3rem;
+  }
+  .text-area > div {
+    display: flex;
+    justify-content: space-between;
+  }
+  aside {
+    margin-top: 10rem;
+    margin-right: 11rem;
+  }
+}
